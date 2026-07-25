@@ -13,6 +13,7 @@ COPY src/Web/package.json src/Web/pnpm-lock.yaml src/Web/pnpm-workspace.yaml ./
 COPY src/Web/supportedLocales.json ./
 COPY src/Web/locales ./locales
 COPY src/Web/packages ./packages
+COPY openapi.json ./
 
 # Install dependencies
 RUN pnpm install --frozen-lockfile
